@@ -5,7 +5,7 @@ if ('user_name' in st.session_state and st.session_state.user_name):
     col1,col2=st.columns(2)
     with col1:
         st.metric("名前,")
-        st.metric("学年",)
+        st.metric("学年,")
     with col2:
         if st.session_state.get('hobbies'):
             st.write("**趣味:**")
@@ -15,7 +15,7 @@ if ('user_name' in st.session_state and st.session_state.user_name):
                 st.write("**趣味:**未設定")
     st.balloons()
 else:
-    st.erron("ユーザー情報が設定されていません")
+    st.error("ユーザー情報が設定されていません")
     st.write("メインページで情報を入力してください")    
 
 
