@@ -5,10 +5,10 @@ if 'name' not in st.session_state:
 if 'grade' not in st.session_state:
     st.session_state.grade=""
 if 'hobbies' not in st.session_state:
-    st.session_state.hobbies=""        
+    st.session_state.hobbies= []        
 name=st.text_input("あなたの名前を入力してください")
-grade=st.radio("学年",
-    ["小5","小６","中１","中２","中３"])
+grade=st.selectbox("学年",
+    ["","小5","小６","中１","中２","中３"])
 hobbies=st.multiselect("趣味",
     ["読書","スポーツ","ゲーム","音楽","絵画","その他"])
 if st.button("情報を保存"):
