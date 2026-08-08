@@ -11,6 +11,7 @@ grade=st.radio("学年",
     ["小5","小６","中１","中２","中３"])
 hobbies=st.multiselect("趣味",
     ["読書","スポーツ","ゲーム","音楽","絵画","その他"])
+st.write("ramen")
 if st.button("情報を保存"):
     st.session_state.name=name
     st.session_state.grade=grade
