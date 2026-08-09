@@ -9,7 +9,7 @@ if ('name' in st.session_state and st.session_state.name):
     with col2:
         if st.session_state.get('hobbies'):
             st.write("**趣味:**")
-            for hobby in st.session_state.hobbies():
+            for hobby in st.session_state.hobbies:
                 st.write(f"{hobby}")
             else:
                 st.write("**趣味:**未設定")
